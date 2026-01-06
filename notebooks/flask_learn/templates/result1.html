@@ -1,0 +1,15 @@
+<html>
+    <h2>
+        Final result
+    </h2>
+    <body>
+        {% for key,value in data.items() %}
+            {%if value >= 50 %}
+                <p> Passed</p>
+            {% else %}
+                <p> Failed</p>
+            {% endif %}
+            <p>{{ key }}: {{ value }}</p>
+        {% endfor %}
+    </body>
+</html>
